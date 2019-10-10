@@ -7,11 +7,11 @@ deploy:
   region: "eu-central-1"
   app: "springrestdemo"
   env: "Springrestdemo-env"
-  bucket-name: “elasticbeanstalk-eu-central-1-243838082233”
-  bucket-path: “springrestdemo”
+  bucket-name: "elasticbeanstalk-eu-central-1-243838082233"
+  bucket-path: "springrestdemo"
   on:
     branch: master
   access_key_id:
-    secure: “$AWS_ACCESS_KEY”
+    secure: "$AWS_ACCESS_KEY"
   secret_access_key:
-    secure: “$AWS_SECRET_KEY”
+    secure: "$AWS_SECRET_KEY"
