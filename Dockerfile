@@ -1,7 +1,7 @@
 FROM maven:3.3-jdk-8 as builder
 WORKDIR '/usr/src/mymaven'
 COPY . .
-RUN mvn -f /usr/src/mymaven/pom.xml clean package
+RUN mvn -f /usr/src/mymaven/pom.xml clean install
 
 FROM tomcat:9.0
 EXPOSE 80

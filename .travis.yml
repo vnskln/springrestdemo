@@ -7,7 +7,7 @@ deploy:
   provider: elasticbeanstalk
   region: "eu-central-1"
   app: "springrestdemo"
-  env: "Springrestdemo-env"
+  env: "Springrestdemo-env-1"
   bucket-name: "elasticbeanstalk-eu-central-1-243838082233"
   bucket-path: "springrestdemo"
   on:
