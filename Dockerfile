@@ -3,8 +3,8 @@ WORKDIR '/usr/src/mymaven'
 COPY . .
 RUN mvn -f /usr/src/mymaven/pom.xml clean install
 
-FROM 9.0.26-jdk11-openjdk-slim
-EXPOSE 80
+FROM tomcat:9.0.26-jdk11-openjdk-slim
+EXPOSE 8080 80
 COPY --from=builder /usr/src/mymaven/target/spring-rest-demo.war /usr/local/tomcat/webapps
 
 
