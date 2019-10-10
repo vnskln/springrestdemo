@@ -2,7 +2,7 @@ sudo: required
 services:
   - docker
 language: java
-script: mvn clean install
+script: mvn package -DskipTests
 deploy:
   provider: elasticbeanstalk
   region: "eu-central-1"
